@@ -544,3 +544,14 @@ footer {
   }
   .timeline-item { gap: 0.6rem; }
 }
+
+
+
+/* Keep the BNL mark the same outer size as the LinkedIn icon without distortion. */
+.bnl-logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  padding: 2px;
+  background: #fff;
+}
