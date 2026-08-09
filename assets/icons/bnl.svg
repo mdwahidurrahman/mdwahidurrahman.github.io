@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Brookhaven National Laboratory">
-  <rect x="2" y="2" width="60" height="60" rx="10" fill="#12395B"/>
-  <circle cx="32" cy="32" r="20" fill="none" stroke="#7FC8F8" stroke-width="2.5"/>
-  <path d="M16 32h32M32 16c6 6 9 11 9 16s-3 10-9 16M32 16c-6 6-9 11-9 16s3 10 9 16" fill="none" stroke="#7FC8F8" stroke-width="2" opacity="0.95"/>
-  <rect x="14" y="23" width="36" height="18" rx="4" fill="#12395B"/>
-  <text x="32" y="36" text-anchor="middle" font-size="13" font-weight="700" font-family="Arial, sans-serif" fill="#fff">BNL</text>
-</svg>
