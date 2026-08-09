@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Google Scholar">
+  <rect width="64" height="64" rx="12" fill="#ffffff"/>
+  <circle cx="32" cy="39" r="14" fill="#4285F4" opacity="0.72"/>
+  <path d="M8 25 32 9l24 16-24 16L8 25Z" fill="#3367D6"/>
+  <path d="M19 32v10c0 7 6 12 13 12s13-5 13-12V32l-13 8-13-8Z" fill="#76A7FA"/>
+  <path d="M55 27v13" stroke="#3367D6" stroke-width="3" stroke-linecap="round"/>
+</svg>
