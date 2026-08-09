@@ -345,6 +345,64 @@ nav a {
 .media-copy h3 { margin-top: 0; }
 
 
+
+
+/* Featured news */
+.featured-section {
+  background: #ffffff;
+  padding-top: 2.8rem;
+  padding-bottom: 3.4rem;
+}
+.featured-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff 0%, #f7faff 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.7rem 1.8rem;
+  max-width: 920px;
+}
+.featured-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--accent);
+}
+.featured-source {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  font-weight: 800;
+  margin-bottom: 0.55rem;
+}
+.featured-card h3 {
+  margin: 0 0 0.7rem;
+  color: var(--accent-2);
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+.featured-card p {
+  margin: 0 0 1rem;
+  color: #45576d;
+  max-width: 78ch;
+}
+.featured-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+.featured-link:hover {
+  text-decoration: underline;
+}
+
+
 /* Publications */
 .publication-grid {
   display: grid;
@@ -620,5 +678,54 @@ footer {
   }
   .compact-links {
     justify-content: flex-start;
+  }
+}
+
+/* Featured MSU graduation photo */
+.featured-card-with-photo {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.25fr);
+  gap: 1.6rem;
+  align-items: center;
+  padding: 0;
+}
+.featured-photo-wrap {
+  height: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+.featured-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: center center;
+}
+.featured-content {
+  padding: 1.7rem 1.8rem 1.7rem 0;
+}
+.featured-card-with-photo::before {
+  display: none;
+}
+@media (max-width: 760px) {
+  .featured-card-with-photo {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .featured-photo-wrap {
+    min-height: 0;
+    height: auto;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+  .featured-photo {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+  .featured-content {
+    padding: 1.4rem 1.5rem 1.6rem;
   }
 }
