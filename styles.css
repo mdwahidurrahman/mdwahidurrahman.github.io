@@ -31,6 +31,77 @@ img { max-width: 100%; display: block; }
 }
 .narrow { width: min(820px, calc(100% - 2rem)); }
 
+/* =========================
+   MOBILE ONLY
+   Desktop stays unchanged
+========================= */
+
+@media (max-width: 760px) {
+
+  .container,
+  .narrow {
+    width: calc(100% - 1.5rem);
+  }
+
+  .nav-wrap {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  nav {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .portrait-panel {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .profile-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .quick-facts {
+    text-align: left;
+  }
+
+  .cards.four-up,
+  .cards.two-up,
+  .publication-grid,
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .featured-card-with-photo {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-photo-wrap {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 2.5rem 0;
+  }
+}
+
 .site-header {
   position: sticky;
   top: 0;
